@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB4126A119EF7D4E00FDC313 /* FPIconFontKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BB4126A019EF7D4E00FDC313 /* FPIconFontKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB4126A719EF7D4E00FDC313 /* FPIconFontKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB41269B19EF7D4E00FDC313 /* FPIconFontKit.framework */; };
+		BB4126AE19EF7D4E00FDC313 /* FPIconFontKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4126AD19EF7D4E00FDC313 /* FPIconFontKitTests.swift */; };
+		BB4126B819EF7EC300FDC313 /* FPIconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4126B719EF7EC300FDC313 /* FPIconFont.swift */; };
+		BB50AC0119F4DB6B007A5735 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50AC0019F4DB6B007A5735 /* main.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB4126A819EF7D4E00FDC313 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB41269219EF7D4E00FDC313 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB41269A19EF7D4E00FDC313;
+			remoteInfo = FPIconFontKit;
+		};
+		BB50AC0519F4DB75007A5735 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB41269219EF7D4E00FDC313 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB50ABFD19F4DB6B007A5735;
+			remoteInfo = generate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BB50ABFC19F4DB6B007A5735 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BB41269B19EF7D4E00FDC313 /* FPIconFontKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FPIconFontKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB41269F19EF7D4E00FDC313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB4126A019EF7D4E00FDC313 /* FPIconFontKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FPIconFontKit.h; sourceTree = "<group>"; };
+		BB4126A619EF7D4E00FDC313 /* FPIconFontKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FPIconFontKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB4126AC19EF7D4E00FDC313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB4126AD19EF7D4E00FDC313 /* FPIconFontKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPIconFontKitTests.swift; sourceTree = "<group>"; };
+		BB4126B719EF7EC300FDC313 /* FPIconFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPIconFont.swift; sourceTree = "<group>"; };
+		BB50ABFE19F4DB6B007A5735 /* generate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = generate; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB50AC0019F4DB6B007A5735 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB41269719EF7D4E00FDC313 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB4126A319EF7D4E00FDC313 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB4126A719EF7D4E00FDC313 /* FPIconFontKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB50ABFB19F4DB6B007A5735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB41269119EF7D4E00FDC313 = {
+			isa = PBXGroup;
+			children = (
+				BB41269D19EF7D4E00FDC313 /* FPIconFontKit */,
+				BB4126AA19EF7D4E00FDC313 /* FPIconFontKitTests */,
+				BB50ABFF19F4DB6B007A5735 /* generate */,
+				BB41269C19EF7D4E00FDC313 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB41269C19EF7D4E00FDC313 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB41269B19EF7D4E00FDC313 /* FPIconFontKit.framework */,
+				BB4126A619EF7D4E00FDC313 /* FPIconFontKitTests.xctest */,
+				BB50ABFE19F4DB6B007A5735 /* generate */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB41269D19EF7D4E00FDC313 /* FPIconFontKit */ = {
+			isa = PBXGroup;
+			children = (
+				BB4126A019EF7D4E00FDC313 /* FPIconFontKit.h */,
+				BB4126B719EF7EC300FDC313 /* FPIconFont.swift */,
+				BB41269E19EF7D4E00FDC313 /* Supporting Files */,
+			);
+			path = FPIconFontKit;
+			sourceTree = "<group>";
+		};
+		BB41269E19EF7D4E00FDC313 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB41269F19EF7D4E00FDC313 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB4126AA19EF7D4E00FDC313 /* FPIconFontKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB4126AD19EF7D4E00FDC313 /* FPIconFontKitTests.swift */,
+				BB4126AB19EF7D4E00FDC313 /* Supporting Files */,
+			);
+			path = FPIconFontKitTests;
+			sourceTree = "<group>";
+		};
+		BB4126AB19EF7D4E00FDC313 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB4126AC19EF7D4E00FDC313 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB50ABFF19F4DB6B007A5735 /* generate */ = {
+			isa = PBXGroup;
+			children = (
+				BB50AC0019F4DB6B007A5735 /* main.swift */,
+			);
+			path = generate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BB41269819EF7D4E00FDC313 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB4126A119EF7D4E00FDC313 /* FPIconFontKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BB41269A19EF7D4E00FDC313 /* FPIconFontKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB4126B119EF7D4E00FDC313 /* Build configuration list for PBXNativeTarget "FPIconFontKit" */;
+			buildPhases = (
+				BB41269619EF7D4E00FDC313 /* Sources */,
+				BB41269719EF7D4E00FDC313 /* Frameworks */,
+				BB41269819EF7D4E00FDC313 /* Headers */,
+				BB41269919EF7D4E00FDC313 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB50AC0619F4DB75007A5735 /* PBXTargetDependency */,
+			);
+			name = FPIconFontKit;
+			productName = FPIconFontKit;
+			productReference = BB41269B19EF7D4E00FDC313 /* FPIconFontKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BB4126A519EF7D4E00FDC313 /* FPIconFontKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB4126B419EF7D4E00FDC313 /* Build configuration list for PBXNativeTarget "FPIconFontKitTests" */;
+			buildPhases = (
+				BB4126A219EF7D4E00FDC313 /* Sources */,
+				BB4126A319EF7D4E00FDC313 /* Frameworks */,
+				BB4126A419EF7D4E00FDC313 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB4126A919EF7D4E00FDC313 /* PBXTargetDependency */,
+			);
+			name = FPIconFontKitTests;
+			productName = FPIconFontKitTests;
+			productReference = BB4126A619EF7D4E00FDC313 /* FPIconFontKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB50ABFD19F4DB6B007A5735 /* generate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB50AC0419F4DB6B007A5735 /* Build configuration list for PBXNativeTarget "generate" */;
+			buildPhases = (
+				BB50ABFA19F4DB6B007A5735 /* Sources */,
+				BB50ABFB19F4DB6B007A5735 /* Frameworks */,
+				BB50ABFC19F4DB6B007A5735 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = generate;
+			productName = generate;
+			productReference = BB50ABFE19F4DB6B007A5735 /* generate */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB41269219EF7D4E00FDC313 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = hewig;
+				TargetAttributes = {
+					BB41269A19EF7D4E00FDC313 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					BB4126A519EF7D4E00FDC313 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					BB50ABFD19F4DB6B007A5735 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = BB41269519EF7D4E00FDC313 /* Build configuration list for PBXProject "FPIconFontKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BB41269119EF7D4E00FDC313;
+			productRefGroup = BB41269C19EF7D4E00FDC313 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB41269A19EF7D4E00FDC313 /* FPIconFontKit */,
+				BB4126A519EF7D4E00FDC313 /* FPIconFontKitTests */,
+				BB50ABFD19F4DB6B007A5735 /* generate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB41269919EF7D4E00FDC313 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB4126A419EF7D4E00FDC313 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB41269619EF7D4E00FDC313 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB4126B819EF7EC300FDC313 /* FPIconFont.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB4126A219EF7D4E00FDC313 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB4126AE19EF7D4E00FDC313 /* FPIconFontKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB50ABFA19F4DB6B007A5735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB50AC0119F4DB6B007A5735 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB4126A919EF7D4E00FDC313 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB41269A19EF7D4E00FDC313 /* FPIconFontKit */;
+			targetProxy = BB4126A819EF7D4E00FDC313 /* PBXContainerItemProxy */;
+		};
+		BB50AC0619F4DB75007A5735 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB50ABFD19F4DB6B007A5735 /* generate */;
+			targetProxy = BB50AC0519F4DB75007A5735 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BB4126AF19EF7D4E00FDC313 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BB4126B019EF7D4E00FDC313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BB4126B219EF7D4E00FDC313 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = FPIconFontKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB4126B319EF7D4E00FDC313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = FPIconFontKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BB4126B519EF7D4E00FDC313 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FPIconFontKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BB4126B619EF7D4E00FDC313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FPIconFontKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BB50AC0219F4DB6B007A5735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BB50AC0319F4DB6B007A5735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB41269519EF7D4E00FDC313 /* Build configuration list for PBXProject "FPIconFontKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB4126AF19EF7D4E00FDC313 /* Debug */,
+				BB4126B019EF7D4E00FDC313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB4126B119EF7D4E00FDC313 /* Build configuration list for PBXNativeTarget "FPIconFontKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB4126B219EF7D4E00FDC313 /* Debug */,
+				BB4126B319EF7D4E00FDC313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB4126B419EF7D4E00FDC313 /* Build configuration list for PBXNativeTarget "FPIconFontKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB4126B519EF7D4E00FDC313 /* Debug */,
+				BB4126B619EF7D4E00FDC313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB50AC0419F4DB6B007A5735 /* Build configuration list for PBXNativeTarget "generate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB50AC0219F4DB6B007A5735 /* Debug */,
+				BB50AC0319F4DB6B007A5735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB41269219EF7D4E00FDC313 /* Project object */;
+}
