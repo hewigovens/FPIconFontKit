@@ -11,6 +11,8 @@
 		BB4126A719EF7D4E00FDC313 /* FPIconFontKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB41269B19EF7D4E00FDC313 /* FPIconFontKit.framework */; };
 		BB4126AE19EF7D4E00FDC313 /* FPIconFontKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4126AD19EF7D4E00FDC313 /* FPIconFontKitTests.swift */; };
 		BB4126B819EF7EC300FDC313 /* FPIconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4126B719EF7EC300FDC313 /* FPIconFont.swift */; };
+		BB41E16719F58EE900ED0633 /* FPIconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4126B719EF7EC300FDC313 /* FPIconFont.swift */; };
+		BB41E16A19F58F0100ED0633 /* generate in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB50ABFE19F4DB6B007A5735 /* generate */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		BB50AC0119F4DB6B007A5735 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50AC0019F4DB6B007A5735 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -22,7 +24,7 @@
 			remoteGlobalIDString = BB41269A19EF7D4E00FDC313;
 			remoteInfo = FPIconFontKit;
 		};
-		BB50AC0519F4DB75007A5735 /* PBXContainerItemProxy */ = {
+		BB41E16819F58EF600ED0633 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BB41269219EF7D4E00FDC313 /* Project object */;
 			proxyType = 1;
@@ -32,6 +34,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		BB41E16319F58AE800ED0633 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 1;
+			files = (
+				BB41E16A19F58F0100ED0633 /* generate in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB50ABFC19F4DB6B007A5735 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -165,13 +177,13 @@
 				BB41269619EF7D4E00FDC313 /* Sources */,
 				BB41269719EF7D4E00FDC313 /* Frameworks */,
 				BB41269819EF7D4E00FDC313 /* Headers */,
-				BB41269919EF7D4E00FDC313 /* Resources */,
+				BB41E16319F58AE800ED0633 /* CopyFiles */,
 				BB41E16219F5899000ED0633 /* Link Derived data */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BB50AC0619F4DB75007A5735 /* PBXTargetDependency */,
+				BB41E16919F58EF600ED0633 /* PBXTargetDependency */,
 			);
 			name = FPIconFontKit;
 			productName = FPIconFontKit;
@@ -253,13 +265,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BB41269919EF7D4E00FDC313 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BB4126A419EF7D4E00FDC313 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -307,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB41E16719F58EE900ED0633 /* FPIconFont.swift in Sources */,
 				BB50AC0119F4DB6B007A5735 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,10 +325,10 @@
 			target = BB41269A19EF7D4E00FDC313 /* FPIconFontKit */;
 			targetProxy = BB4126A819EF7D4E00FDC313 /* PBXContainerItemProxy */;
 		};
-		BB50AC0619F4DB75007A5735 /* PBXTargetDependency */ = {
+		BB41E16919F58EF600ED0633 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BB50ABFD19F4DB6B007A5735 /* generate */;
-			targetProxy = BB50AC0519F4DB75007A5735 /* PBXContainerItemProxy */;
+			targetProxy = BB41E16819F58EF600ED0633 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

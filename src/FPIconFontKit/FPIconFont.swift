@@ -87,6 +87,7 @@ public class FPIconFont: NSObject {
         NSGraphicsContext.restoreGraphicsState()
         let data = bitmap?.representationUsingType(NSBitmapImageFileType.NSPNGFileType, properties: Dictionary<NSObject, AnyObject>())
         let image = NSImage(data: data!)
+        image?.size = NSSize(width: size, height: size)
 
         return image
     }

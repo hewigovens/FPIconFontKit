@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import FPIconFontKit
 
 let HeaderKeyPrefix = "kFPIconFont"
 let HeaderFileName = "FPIconFontConstants.swift"
@@ -18,18 +17,20 @@ func usage(){
 
 func generate(font : FPIconFont, output : String) {
     
+    let outputFileName = output + "/" + HeaderFileName
+    
     let glyphs = font.glyphKeys
     var header : NSMutableString = "//This file is generated, you should not edit it directly\n\n"
     for glyph in glyphs {
         let glyphName = glyph as NSString
         let array : NSArray = glyphName.capitalizedString.componentsSeparatedByCharactersInSet(NSCharacterSet.alphanumericCharacterSet().invertedSet)
-        let glyphNameKey = HeaderKeyPrefix + glyphName.capitalizedString + array.componentsJoinedByString("")
+        let glyphNameKey = HeaderKeyPrefix + array.componentsJoinedByString("")
         
         header.appendFormat("let %@ = \"%@\"\n", glyphNameKey, glyphName)
     }
     
     var error : NSError? = nil
-    if !header.writeToFile(output, atomically: false, encoding: NSUTF8StringEncoding, error: &error) {
+    if !header.writeToFile(outputFileName, atomically: false, encoding: NSUTF8StringEncoding, error: &error) {
         if error != nil {
             println("generate error : \(error?.description)")
         }
