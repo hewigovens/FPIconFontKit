@@ -166,6 +166,7 @@
 				BB41269719EF7D4E00FDC313 /* Frameworks */,
 				BB41269819EF7D4E00FDC313 /* Headers */,
 				BB41269919EF7D4E00FDC313 /* Resources */,
+				BB41E16219F5899000ED0633 /* Link Derived data */,
 			);
 			buildRules = (
 			);
@@ -267,6 +268,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BB41E16219F5899000ED0633 /* Link Derived data */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Link Derived data";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "LINK_NAME=derived_data\n\nif [ -L $LINK_NAME ];then\nrm -rf $LINK_NAME\nfi\n\nif [ ! -d $LINK_NAME ]; then\nln -s \"${BUILT_PRODUCTS_DIR}\" $LINK_NAME\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BB41269619EF7D4E00FDC313 /* Sources */ = {
