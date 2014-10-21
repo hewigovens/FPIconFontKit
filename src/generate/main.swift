@@ -8,52 +8,83 @@
 
 import Foundation
 
-let HeaderKeyPrefix = "kFPIconFont"
-let HeaderFileName = "FPIconFontConstants.swift"
+// MARK: Constants
+let ConstantKeyPrefix = "kFPIconFont"
+let GeneratedFileName = "FPIconFontConstants"
+let SwiftExt = ".swift"
+let ObjcHeaderExt = ".h"
+let ObjcImpExt = ".m"
 
-func usage(){
-    println("Usage: generate /path/to/iconfont /output/path")
-}
 
-func generate(font : FPIconFont, output : String) {
+func generate(font: FPIconFont, output: String, isObjc: Bool = false) {
     
-    let outputFileName = output + "/" + HeaderFileName
+    let outputFileName = output + "/" + GeneratedFileName
     
     let glyphs = font.glyphKeys
-    var header : NSMutableString = "//This file is generated, you should not edit it directly\n\n"
+    var header: NSMutableString = "//This file is generated, you should not edit it directly\n\n"
+    var implention: NSMutableString? = nil
+    if isObjc {
+        header.appendString("#ifndef FontTest_FPFontKitGlyphConstant_h\n");
+        header.appendString("#define FontTest_FPFontKitGlyphConstant_h\n\n");
+        header.appendString("#import <Foundation/Foundation.h>\n\n");
+        
+        implention = NSMutableString(string: "#import \"\(outputFileName + ObjcHeaderExt)\"\n\n")
+    }
     for glyph in glyphs {
         let glyphName = glyph as NSString
-        let array : NSArray = glyphName.capitalizedString.componentsSeparatedByCharactersInSet(NSCharacterSet.alphanumericCharacterSet().invertedSet)
-        let glyphNameKey = HeaderKeyPrefix + array.componentsJoinedByString("")
+        let array: NSArray = glyphName.capitalizedString.componentsSeparatedByCharactersInSet(NSCharacterSet.alphanumericCharacterSet().invertedSet)
+        let glyphNameKey = ConstantKeyPrefix + array.componentsJoinedByString("")
         
-        header.appendFormat("let %@ = \"%@\"\n", glyphNameKey, glyphName)
+        if isObjc {
+            header.appendFormat("extern NSString * const %@;\n", glyphNameKey)
+            implention?.appendFormat("NSString * const %@ = @\"%@\";\n", glyphNameKey, glyphName)
+        } else {
+            header.appendFormat("let %@ = \"%@\"\n", glyphNameKey, glyphName)
+        }
     }
     
-    var error : NSError? = nil
-    if !header.writeToFile(outputFileName, atomically: false, encoding: NSUTF8StringEncoding, error: &error) {
-        if error != nil {
-            println("generate error : \(error?.description)")
-        }
-    }
-}
-
-func main(arguments:[AnyObject]){
-    if arguments.count <= 1 {
-        usage()
+    var error: NSError? = nil
+    if isObjc {
+        header.writeToFile(outputFileName + ObjcHeaderExt, atomically: false, encoding: NSUTF8StringEncoding, error: &error)
+        implention?.writeToFile(outputFileName + ObjcImpExt, atomically: false, encoding: NSUTF8StringEncoding, error: &error)
     } else {
-        let iconPath = arguments[1] as String
-        
-        var outputPath : String? = nil
-        if arguments.count >= 2 {
-            outputPath = arguments[2] as? String
-        } else {
-            outputPath = "."
-        }
-        
-        let iconFont = FPIconFont(path: iconPath)
-        generate(iconFont, outputPath!)
+        header.writeToFile(outputFileName + SwiftExt, atomically: false, encoding: NSUTF8StringEncoding, error: &error)
+    }
+    if error != nil {
+        println("generate error : \(error?.description)")
     }
 }
 
-let arguments = NSProcessInfo.processInfo().arguments
-main(arguments)
+func main(){
+    let cli = CommandLine()
+    
+    let inputOption = StringOption(shortFlag: "i", longFlag: "input-file",
+        required: true, helpMessage: "Path to icon font file")
+    let outputOption = StringOption(shortFlag: "o", longFlag: "output-path",
+        required: false, helpMessage: "Path to output for generated files")
+    let objcOption = BoolOption(shortFlag: "c", longFlag: "objc", helpMessage: "Generate ObjC files")
+    let helpOption = BoolOption(shortFlag: "h", longFlag: "help", helpMessage: "Print this help message")
+    
+    cli.addOptions(inputOption, outputOption, objcOption, helpOption)
+    let (success, error) = cli.parse()
+    if !success {
+        println(error!)
+        cli.printUsage()
+        exit(EX_USAGE)
+    }
+    
+    let font = FPIconFont(path: inputOption.value!)
+    var path: String? = nil
+    if (outputOption.value != nil) {
+        path = outputOption.value?.stringByDeletingPathExtension
+    } else {
+        path = "."
+    }
+
+    generate(font, path!, isObjc: objcOption.value)
+}
+
+// MARK: entry point
+main()
+
+

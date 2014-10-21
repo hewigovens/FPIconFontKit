@@ -14,6 +14,9 @@
 		BB41E16719F58EE900ED0633 /* FPIconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4126B719EF7EC300FDC313 /* FPIconFont.swift */; };
 		BB41E16A19F58F0100ED0633 /* generate in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB50ABFE19F4DB6B007A5735 /* generate */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		BB50AC0119F4DB6B007A5735 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50AC0019F4DB6B007A5735 /* main.swift */; };
+		BB633EA119F5F2D300EBB8C5 /* CommandLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB633E9D19F5F2D300EBB8C5 /* CommandLine.swift */; };
+		BB633EA219F5F2D300EBB8C5 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB633E9F19F5F2D300EBB8C5 /* Option.swift */; };
+		BB633EA319F5F2D300EBB8C5 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB633EA019F5F2D300EBB8C5 /* StringExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,15 +47,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BB50ABFC19F4DB6B007A5735 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +59,9 @@
 		BB4126B719EF7EC300FDC313 /* FPIconFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPIconFont.swift; sourceTree = "<group>"; };
 		BB50ABFE19F4DB6B007A5735 /* generate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = generate; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB50AC0019F4DB6B007A5735 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		BB633E9D19F5F2D300EBB8C5 /* CommandLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandLine.swift; sourceTree = "<group>"; };
+		BB633E9F19F5F2D300EBB8C5 /* Option.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		BB633EA019F5F2D300EBB8C5 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +93,7 @@
 		BB41269119EF7D4E00FDC313 = {
 			isa = PBXGroup;
 			children = (
+				BB633E9C19F5F2D300EBB8C5 /* CommandLine */,
 				BB41269D19EF7D4E00FDC313 /* FPIconFontKit */,
 				BB4126AA19EF7D4E00FDC313 /* FPIconFontKitTests */,
 				BB50ABFF19F4DB6B007A5735 /* generate */,
@@ -156,6 +154,17 @@
 			path = generate;
 			sourceTree = "<group>";
 		};
+		BB633E9C19F5F2D300EBB8C5 /* CommandLine */ = {
+			isa = PBXGroup;
+			children = (
+				BB633E9D19F5F2D300EBB8C5 /* CommandLine.swift */,
+				BB633E9F19F5F2D300EBB8C5 /* Option.swift */,
+				BB633EA019F5F2D300EBB8C5 /* StringExtensions.swift */,
+			);
+			name = CommandLine;
+			path = CommandLine/CommandLine;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -214,7 +223,6 @@
 			buildPhases = (
 				BB50ABFA19F4DB6B007A5735 /* Sources */,
 				BB50ABFB19F4DB6B007A5735 /* Frameworks */,
-				BB50ABFC19F4DB6B007A5735 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -312,6 +320,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB633EA219F5F2D300EBB8C5 /* Option.swift in Sources */,
+				BB633EA119F5F2D300EBB8C5 /* CommandLine.swift in Sources */,
+				BB633EA319F5F2D300EBB8C5 /* StringExtensions.swift in Sources */,
 				BB41E16719F58EE900ED0633 /* FPIconFont.swift in Sources */,
 				BB50AC0119F4DB6B007A5735 /* main.swift in Sources */,
 			);

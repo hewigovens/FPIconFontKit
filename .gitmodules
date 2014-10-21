@@ -1,3 +1,6 @@
 [submodule "octicons"]
 	path = octicons
 	url = https://github.com/github/octicons.git
+[submodule "src/CommandLine"]
+	path = src/CommandLine
+	url = https://github.com/jatoben/CommandLine.git
