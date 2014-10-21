@@ -9,23 +9,32 @@
 import Cocoa
 
 public class FPIconFont: NSObject {
-
+    
+    /// Public properties
     public let name = ""
-    public var glyphKeys : LazyBidirectionalCollection<MapCollectionView<[String : UInt], String>> {
+    public var glyphKeys: LazyBidirectionalCollection<MapCollectionView<[String : UInt], String>> {
         get {
             return glyphs.keys
         }
     }
-    public var glyphCount : Int {
+    public var glyphCount: Int {
         get {
             return self.glyphs.count;
         }
     }
     
-    private let path : String
+    ///  Private properties
+    private let path: String
     private var glyphs = Dictionary<String, UInt>()
-    private var cgRontRef : CGFontRef? = nil
+    private var cgRontRef: CGFontRef? = nil
 
+    /**
+    Init method
+    
+    :param: path path to the icon font file
+    
+    :returns: FPIconFont instance
+    */
     public init(path: String) {
         
         self.path = path
@@ -39,7 +48,7 @@ public class FPIconFont: NSObject {
         
         for index in 0..<count {
             
-            var glyphName : NSString = CGFontCopyGlyphNameForGlyph(self.cgRontRef, CGGlyph(index)) as NSString
+            var glyphName: NSString = CGFontCopyGlyphNameForGlyph(self.cgRontRef, CGGlyph(index)) as NSString
             let rect = font.boundingRectForGlyph(NSGlyph(index))
             if !NSIsEmptyRect(rect) {
                 var bezierPath = NSBezierPath()
@@ -51,7 +60,17 @@ public class FPIconFont: NSObject {
             }
         }
     }
-    public func getImage(name : String, size : Int, color : NSColor) -> NSImage? {
+    
+    /**
+    Return NSImage? for given name/size/color
+    
+    :param: name  glyph name in icon font
+    :param: size  image size
+    :param: color image color
+    
+    :returns: NSImage?
+    */
+    public func getImage(name: String, size: Int, color: NSColor) -> NSImage? {
         
         let glyph = self.glyphs[name]
         
@@ -59,7 +78,7 @@ public class FPIconFont: NSObject {
             return nil
         }
         
-        let font : NSFont = CTFontCreateWithGraphicsFont(self.cgRontRef, 12.0, nil, nil) as NSFont
+        let font: NSFont = CTFontCreateWithGraphicsFont(self.cgRontRef, 12.0, nil, nil) as NSFont
         
         var rect = font.boundingRectForGlyph(NSGlyph(glyph!))
         var bezierPath = NSBezierPath()
