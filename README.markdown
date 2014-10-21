@@ -10,25 +10,25 @@
 import FPIconFontKit
 
 let fontPath = NSBundle.mainBundle().pathForResource("octicons", ofType: "ttf")
-        let font = FPIconFont(path:fontPath!)
+let font = FPIconFont(path:fontPath!)
         
-        let image = font.getImage("heart", size: 256, color: NSColor.purpleColor())
-        dispatch_async(dispatch_get_main_queue(), { () -> Void in
-            self.imageView.image = image
-        })
+let image = font.getImage("heart", size: 256, color: NSColor.purpleColor())
+dispatch_async(dispatch_get_main_queue(), { () -> Void in
+    self.imageView.image = image
+})
 
 ```
 
 ### Objc code
 
-```
+```objc
 @import FPIconFontKit;
 
 FPIconFont *font = [[FPIconFont alloc] initWithPath:[[NSBundle mainBundle] pathForResource:@"octicons" ofType:@"ttf"]];
-    NSImage *image = [font getImage:@"heart" size:128 color:[NSColor purpleColor]];
-    dispatch_async(dispatch_get_main_queue(), ^{
-        self.imageView.image = image;
-    });
+NSImage *image = [font getImage:@"heart" size:128 color:[NSColor purpleColor]];
+dispatch_async(dispatch_get_main_queue(), ^{
+    self.imageView.image = image;
+});
 
 ```
 
