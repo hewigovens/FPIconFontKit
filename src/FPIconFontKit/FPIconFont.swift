@@ -78,7 +78,7 @@ public class FPIconFont: NSObject {
             return nil
         }
         
-        let font: NSFont = CTFontCreateWithGraphicsFont(self.cgRontRef, 12.0, nil, nil) as NSFont
+        let font: NSFont = CTFontCreateWithGraphicsFont(self.cgRontRef, CGFloat(size) * 2.0, nil, nil) as NSFont
         
         var rect = font.boundingRectForGlyph(NSGlyph(glyph!))
         var bezierPath = NSBezierPath()

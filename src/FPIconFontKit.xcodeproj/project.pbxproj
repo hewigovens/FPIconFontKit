@@ -7,6 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB1619A219F6B58000AC466D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1619A119F6B58000AC466D /* AppDelegate.swift */; };
+		BB1619A419F6B58000AC466D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1619A319F6B58000AC466D /* ViewController.swift */; };
+		BB1619A619F6B58000AC466D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB1619A519F6B58000AC466D /* Images.xcassets */; };
+		BB1619A919F6B58000AC466D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB1619A719F6B58000AC466D /* Main.storyboard */; };
+		BB1619BE19F6B5D000AC466D /* FPIconFontKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB41269B19EF7D4E00FDC313 /* FPIconFontKit.framework */; };
+		BB1619C019F6B6B500AC466D /* octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB1619BF19F6B6B500AC466D /* octicons.ttf */; };
+		BB1619CB19F6B8A000AC466D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1619CA19F6B8A000AC466D /* AppDelegate.m */; };
+		BB1619CD19F6B8A000AC466D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1619CC19F6B8A000AC466D /* main.m */; };
+		BB1619D019F6B8A000AC466D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1619CF19F6B8A000AC466D /* ViewController.m */; };
+		BB1619D219F6B8A000AC466D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB1619D119F6B8A000AC466D /* Images.xcassets */; };
+		BB1619D519F6B8A000AC466D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB1619D319F6B8A000AC466D /* Main.storyboard */; };
+		BB1619EA19F6B8B500AC466D /* FPIconFontKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB41269B19EF7D4E00FDC313 /* FPIconFontKit.framework */; };
+		BB1619EC19F6B8C000AC466D /* FPIconFontKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB41269B19EF7D4E00FDC313 /* FPIconFontKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BB161A0019F6B91600AC466D /* octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB1619BF19F6B6B500AC466D /* octicons.ttf */; };
+		BB161A0119F6B93200AC466D /* libswiftAppKit.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB1619EE19F6B8F600AC466D /* libswiftAppKit.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BB161A0219F6B93200AC466D /* libswiftCore.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB1619EF19F6B8F600AC466D /* libswiftCore.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BB161A0319F6B93200AC466D /* libswiftCoreGraphics.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB1619F019F6B8F600AC466D /* libswiftCoreGraphics.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BB161A0419F6B93200AC466D /* libswiftDarwin.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB1619F119F6B8F600AC466D /* libswiftDarwin.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BB161A0519F6B93200AC466D /* libswiftDispatch.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB1619F219F6B8F600AC466D /* libswiftDispatch.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BB161A0619F6B93200AC466D /* libswiftFoundation.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB1619F319F6B8F600AC466D /* libswiftFoundation.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BB161A0719F6B93200AC466D /* libswiftObjectiveC.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB1619F419F6B8F600AC466D /* libswiftObjectiveC.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BB161A0819F6B93200AC466D /* libswiftQuartzCore.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB1619F519F6B8F600AC466D /* libswiftQuartzCore.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BB161A0919F6B93200AC466D /* libswiftSecurity.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB1619F619F6B8F600AC466D /* libswiftSecurity.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		BB4126A119EF7D4E00FDC313 /* FPIconFontKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BB4126A019EF7D4E00FDC313 /* FPIconFontKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB4126A719EF7D4E00FDC313 /* FPIconFontKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB41269B19EF7D4E00FDC313 /* FPIconFontKit.framework */; };
 		BB4126AE19EF7D4E00FDC313 /* FPIconFontKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4126AD19EF7D4E00FDC313 /* FPIconFontKitTests.swift */; };
@@ -20,6 +43,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BB1619BC19F6B5CC00AC466D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB41269219EF7D4E00FDC313 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB41269A19EF7D4E00FDC313;
+			remoteInfo = FPIconFontKit;
+		};
+		BB1619E819F6B8B300AC466D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB41269219EF7D4E00FDC313 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB41269A19EF7D4E00FDC313;
+			remoteInfo = FPIconFontKit;
+		};
 		BB4126A819EF7D4E00FDC313 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BB41269219EF7D4E00FDC313 /* Project object */;
@@ -37,6 +74,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		BB1619EB19F6B8B900AC466D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BB161A0119F6B93200AC466D /* libswiftAppKit.dylib in CopyFiles */,
+				BB161A0219F6B93200AC466D /* libswiftCore.dylib in CopyFiles */,
+				BB161A0319F6B93200AC466D /* libswiftCoreGraphics.dylib in CopyFiles */,
+				BB161A0419F6B93200AC466D /* libswiftDarwin.dylib in CopyFiles */,
+				BB161A0519F6B93200AC466D /* libswiftDispatch.dylib in CopyFiles */,
+				BB161A0619F6B93200AC466D /* libswiftFoundation.dylib in CopyFiles */,
+				BB161A0719F6B93200AC466D /* libswiftObjectiveC.dylib in CopyFiles */,
+				BB161A0819F6B93200AC466D /* libswiftQuartzCore.dylib in CopyFiles */,
+				BB161A0919F6B93200AC466D /* libswiftSecurity.dylib in CopyFiles */,
+				BB1619EC19F6B8C000AC466D /* FPIconFontKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB41E16319F58AE800ED0633 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,6 +106,31 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BB16199D19F6B58000AC466D /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1619A019F6B58000AC466D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB1619A119F6B58000AC466D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB1619A319F6B58000AC466D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB1619A519F6B58000AC466D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BB1619A819F6B58000AC466D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB1619BF19F6B6B500AC466D /* octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = octicons.ttf; path = ../../octicons/octicons/octicons.ttf; sourceTree = "<group>"; };
+		BB1619C519F6B8A000AC466D /* DemoObjc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoObjc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1619C819F6B8A000AC466D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB1619C919F6B8A000AC466D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BB1619CA19F6B8A000AC466D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BB1619CC19F6B8A000AC466D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BB1619CE19F6B8A000AC466D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BB1619CF19F6B8A000AC466D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BB1619D119F6B8A000AC466D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BB1619D419F6B8A000AC466D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB1619EE19F6B8F600AC466D /* libswiftAppKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libswiftAppKit.dylib; sourceTree = "<group>"; };
+		BB1619EF19F6B8F600AC466D /* libswiftCore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libswiftCore.dylib; sourceTree = "<group>"; };
+		BB1619F019F6B8F600AC466D /* libswiftCoreGraphics.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libswiftCoreGraphics.dylib; sourceTree = "<group>"; };
+		BB1619F119F6B8F600AC466D /* libswiftDarwin.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libswiftDarwin.dylib; sourceTree = "<group>"; };
+		BB1619F219F6B8F600AC466D /* libswiftDispatch.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libswiftDispatch.dylib; sourceTree = "<group>"; };
+		BB1619F319F6B8F600AC466D /* libswiftFoundation.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libswiftFoundation.dylib; sourceTree = "<group>"; };
+		BB1619F419F6B8F600AC466D /* libswiftObjectiveC.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libswiftObjectiveC.dylib; sourceTree = "<group>"; };
+		BB1619F519F6B8F600AC466D /* libswiftQuartzCore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libswiftQuartzCore.dylib; sourceTree = "<group>"; };
+		BB1619F619F6B8F600AC466D /* libswiftSecurity.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libswiftSecurity.dylib; sourceTree = "<group>"; };
 		BB41269B19EF7D4E00FDC313 /* FPIconFontKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FPIconFontKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB41269F19EF7D4E00FDC313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB4126A019EF7D4E00FDC313 /* FPIconFontKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FPIconFontKit.h; sourceTree = "<group>"; };
@@ -65,6 +146,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BB16199A19F6B58000AC466D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1619BE19F6B5D000AC466D /* FPIconFontKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1619C219F6B8A000AC466D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1619EA19F6B8B500AC466D /* FPIconFontKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB41269719EF7D4E00FDC313 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -90,10 +187,89 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BB41269119EF7D4E00FDC313 = {
+		BB16199E19F6B58000AC466D /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				BB1619A119F6B58000AC466D /* AppDelegate.swift */,
+				BB1619A319F6B58000AC466D /* ViewController.swift */,
+				BB1619A519F6B58000AC466D /* Images.xcassets */,
+				BB1619A719F6B58000AC466D /* Main.storyboard */,
+				BB16199F19F6B58000AC466D /* Supporting Files */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		BB16199F19F6B58000AC466D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB1619BF19F6B6B500AC466D /* octicons.ttf */,
+				BB1619A019F6B58000AC466D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB1619C619F6B8A000AC466D /* DemoObjc */ = {
+			isa = PBXGroup;
+			children = (
+				BB1619ED19F6B8F600AC466D /* libs */,
+				BB1619C919F6B8A000AC466D /* AppDelegate.h */,
+				BB1619CA19F6B8A000AC466D /* AppDelegate.m */,
+				BB1619CE19F6B8A000AC466D /* ViewController.h */,
+				BB1619CF19F6B8A000AC466D /* ViewController.m */,
+				BB1619D119F6B8A000AC466D /* Images.xcassets */,
+				BB1619D319F6B8A000AC466D /* Main.storyboard */,
+				BB1619C719F6B8A000AC466D /* Supporting Files */,
+			);
+			path = DemoObjc;
+			sourceTree = "<group>";
+		};
+		BB1619C719F6B8A000AC466D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB1619C819F6B8A000AC466D /* Info.plist */,
+				BB1619CC19F6B8A000AC466D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB1619ED19F6B8F600AC466D /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				BB1619EE19F6B8F600AC466D /* libswiftAppKit.dylib */,
+				BB1619EF19F6B8F600AC466D /* libswiftCore.dylib */,
+				BB1619F019F6B8F600AC466D /* libswiftCoreGraphics.dylib */,
+				BB1619F119F6B8F600AC466D /* libswiftDarwin.dylib */,
+				BB1619F219F6B8F600AC466D /* libswiftDispatch.dylib */,
+				BB1619F319F6B8F600AC466D /* libswiftFoundation.dylib */,
+				BB1619F419F6B8F600AC466D /* libswiftObjectiveC.dylib */,
+				BB1619F519F6B8F600AC466D /* libswiftQuartzCore.dylib */,
+				BB1619F619F6B8F600AC466D /* libswiftSecurity.dylib */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		BB161A0A19F6BA2000AC466D /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				BB16199E19F6B58000AC466D /* Demo */,
+				BB1619C619F6B8A000AC466D /* DemoObjc */,
+			);
+			name = Demo;
+			sourceTree = "<group>";
+		};
+		BB161A0B19F6BA2D00AC466D /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
 				BB633E9C19F5F2D300EBB8C5 /* CommandLine */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		BB41269119EF7D4E00FDC313 = {
+			isa = PBXGroup;
+			children = (
+				BB161A0B19F6BA2D00AC466D /* Dependencies */,
+				BB161A0A19F6BA2000AC466D /* Demo */,
 				BB41269D19EF7D4E00FDC313 /* FPIconFontKit */,
 				BB4126AA19EF7D4E00FDC313 /* FPIconFontKitTests */,
 				BB50ABFF19F4DB6B007A5735 /* generate */,
@@ -107,6 +283,8 @@
 				BB41269B19EF7D4E00FDC313 /* FPIconFontKit.framework */,
 				BB4126A619EF7D4E00FDC313 /* FPIconFontKitTests.xctest */,
 				BB50ABFE19F4DB6B007A5735 /* generate */,
+				BB16199D19F6B58000AC466D /* Demo.app */,
+				BB1619C519F6B8A000AC466D /* DemoObjc.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,6 +357,43 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		BB16199C19F6B58000AC466D /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB1619B619F6B58000AC466D /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				BB16199919F6B58000AC466D /* Sources */,
+				BB16199A19F6B58000AC466D /* Frameworks */,
+				BB16199B19F6B58000AC466D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB1619BD19F6B5CC00AC466D /* PBXTargetDependency */,
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = BB16199D19F6B58000AC466D /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB1619C419F6B8A000AC466D /* DemoObjc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB1619E219F6B8A000AC466D /* Build configuration list for PBXNativeTarget "DemoObjc" */;
+			buildPhases = (
+				BB1619C119F6B8A000AC466D /* Sources */,
+				BB1619C219F6B8A000AC466D /* Frameworks */,
+				BB1619C319F6B8A000AC466D /* Resources */,
+				BB1619EB19F6B8B900AC466D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB1619E919F6B8B300AC466D /* PBXTargetDependency */,
+			);
+			name = DemoObjc;
+			productName = DemoObjc;
+			productReference = BB1619C519F6B8A000AC466D /* DemoObjc.app */;
+			productType = "com.apple.product-type.application";
+		};
 		BB41269A19EF7D4E00FDC313 /* FPIconFontKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB4126B119EF7D4E00FDC313 /* Build configuration list for PBXNativeTarget "FPIconFontKit" */;
@@ -242,6 +457,12 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = hewig;
 				TargetAttributes = {
+					BB16199C19F6B58000AC466D = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					BB1619C419F6B8A000AC466D = {
+						CreatedOnToolsVersion = 6.1;
+					};
 					BB41269A19EF7D4E00FDC313 = {
 						CreatedOnToolsVersion = 6.1;
 					};
@@ -259,6 +480,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = BB41269119EF7D4E00FDC313;
 			productRefGroup = BB41269C19EF7D4E00FDC313 /* Products */;
@@ -268,11 +490,33 @@
 				BB41269A19EF7D4E00FDC313 /* FPIconFontKit */,
 				BB4126A519EF7D4E00FDC313 /* FPIconFontKitTests */,
 				BB50ABFD19F4DB6B007A5735 /* generate */,
+				BB16199C19F6B58000AC466D /* Demo */,
+				BB1619C419F6B8A000AC466D /* DemoObjc */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BB16199B19F6B58000AC466D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1619A619F6B58000AC466D /* Images.xcassets in Resources */,
+				BB1619C019F6B6B500AC466D /* octicons.ttf in Resources */,
+				BB1619A919F6B58000AC466D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1619C319F6B8A000AC466D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1619D219F6B8A000AC466D /* Images.xcassets in Resources */,
+				BB161A0019F6B91600AC466D /* octicons.ttf in Resources */,
+				BB1619D519F6B8A000AC466D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB4126A419EF7D4E00FDC313 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -300,6 +544,25 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BB16199919F6B58000AC466D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1619A419F6B58000AC466D /* ViewController.swift in Sources */,
+				BB1619A219F6B58000AC466D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1619C119F6B8A000AC466D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1619D019F6B8A000AC466D /* ViewController.m in Sources */,
+				BB1619CD19F6B8A000AC466D /* main.m in Sources */,
+				BB1619CB19F6B8A000AC466D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB41269619EF7D4E00FDC313 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -331,6 +594,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BB1619BD19F6B5CC00AC466D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB41269A19EF7D4E00FDC313 /* FPIconFontKit */;
+			targetProxy = BB1619BC19F6B5CC00AC466D /* PBXContainerItemProxy */;
+		};
+		BB1619E919F6B8B300AC466D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB41269A19EF7D4E00FDC313 /* FPIconFontKit */;
+			targetProxy = BB1619E819F6B8B300AC466D /* PBXContainerItemProxy */;
+		};
 		BB4126A919EF7D4E00FDC313 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BB41269A19EF7D4E00FDC313 /* FPIconFontKit */;
@@ -343,7 +616,90 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		BB1619A719F6B58000AC466D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB1619A819F6B58000AC466D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB1619D319F6B8A000AC466D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB1619D419F6B8A000AC466D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		BB1619B719F6B58000AC466D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BB1619B819F6B58000AC466D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BB1619E319F6B8A000AC466D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DemoObjc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DemoObjc/libs",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BB1619E419F6B8A000AC466D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DemoObjc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DemoObjc/libs",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		BB4126AF19EF7D4E00FDC313 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -437,6 +793,7 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = FPIconFontKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_DYLIB_INSTALL_NAME = "$(DYLIB_INSTALL_NAME_BASE:standardizepath)/$(EXECUTABLE_PATH)";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -456,6 +813,7 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = FPIconFontKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_DYLIB_INSTALL_NAME = "$(DYLIB_INSTALL_NAME_BASE:standardizepath)/$(EXECUTABLE_PATH)";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -515,6 +873,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BB1619B619F6B58000AC466D /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB1619B719F6B58000AC466D /* Debug */,
+				BB1619B819F6B58000AC466D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BB1619E219F6B8A000AC466D /* Build configuration list for PBXNativeTarget "DemoObjc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB1619E319F6B8A000AC466D /* Debug */,
+				BB1619E419F6B8A000AC466D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		BB41269519EF7D4E00FDC313 /* Build configuration list for PBXProject "FPIconFontKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
