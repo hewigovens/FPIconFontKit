@@ -52,6 +52,7 @@ FPIconFontKit.framework/generate -i ~/Desktop/octicons.ttf -o ~/Desktop/ --objc
 
 
 ## Thanks
+* [CommandLine](https://github.com/jatoben/CommandLine)
 * [Github octicons](https://octicons.github.com/)
 * [ionicons](http://ionicons.com/)
 * [FontAwesomeKit](https://github.com/PrideChung/FontAwesomeKit)
