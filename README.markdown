@@ -51,6 +51,13 @@ FPIconFontKit.framework/generate -i ~/Desktop/octicons.ttf -o ~/Desktop/ --objc
 * more icon font testing
 
 
+## Thanks
+* [Github octicons](https://octicons.github.com/)
+* [ionicons](http://ionicons.com/)
+* [FontAwesomeKit](https://github.com/PrideChung/FontAwesomeKit)
+* [iconfontr](https://github.com/shanzi/iconfontr.git)
+* [RoboFont](http://doc.robofont.com/)
+
 ## License
 
 MIT
