@@ -1,9 +1,13 @@
 
 ## Introduction
 
-`FPIconFontKit` is an OS X framework written in Swift trying to make it easier to use icon fonts like `octicons` in OS X apps.
+`FPIconFontKit` is an icon font framework written in Swift trying to make it easier to use fonts like `octicons` in OS X (Yosemite and above) apps. 
 
 ## How to use
+
+* Add `FPIconFontKit.xcodeproj` to your project
+* Add `FPIconFontKit` as a target dependency
+* Link & Copy to `Frameworks` folder
 
 ### Swift code
 ```swift
@@ -38,3 +42,10 @@ FPIconFontKit.framework/generate -i ~/Desktop/octicons.ttf -o ~/Desktop/ --objc
 ```
 
 ## TODO
+* pod support
+* more icon font testing
+
+
+## License
+
+MIT
