@@ -41,8 +41,13 @@ you can checkout `src/Demo[Objc]` for more details. `FPIconFontKit` also provide
 FPIconFontKit.framework/generate -i ~/Desktop/octicons.ttf -o ~/Desktop/ --objc
 ```
 
+### Screenshot
+
+![demo-objc](docs/demo_objc.jpg)
+
 ## TODO
-* pod support
+* Cache
+* Cocoa pod
 * more icon font testing
 
 
