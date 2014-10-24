@@ -28,7 +28,7 @@ func generate(font: FPIconFont, output: String, isObjc: Bool = false) {
         header.appendString("#define FontTest_FPFontKitGlyphConstant_h\n\n");
         header.appendString("#import <Foundation/Foundation.h>\n\n");
         
-        implention = NSMutableString(string: "#import \"\(outputFileName + ObjcHeaderExt)\"\n\n")
+        implention = NSMutableString(string: "#import \"\(GeneratedFileName + ObjcHeaderExt)\"\n\n")
     }
     for glyph in glyphs {
         let glyphName = glyph as NSString
@@ -41,6 +41,10 @@ func generate(font: FPIconFont, output: String, isObjc: Bool = false) {
         } else {
             header.appendFormat("let %@ = \"%@\"\n", glyphNameKey, glyphName)
         }
+    }
+    
+    if isObjc {
+        header.appendString("\n#endif")
     }
     
     var error: NSError? = nil
