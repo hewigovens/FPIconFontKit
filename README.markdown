@@ -38,7 +38,7 @@ dispatch_async(dispatch_get_main_queue(), ^{
 
 you can checkout `src/Demo[Objc]` for more details. `FPIconFontKit` also provides a command line utility to generate header file contains glyph name constants extracting from icons, e.g.
 ```shell
-FPIconFontKit.framework/generate -i ~/Desktop/octicons.ttf -o ~/Desktop/ --objc
+FPIconFontKit.framework/Resources/generate -i ~/Desktop/octicons.ttf -o ~/Desktop/ --objc
 ```
 
 ### Screenshot
@@ -46,7 +46,6 @@ FPIconFontKit.framework/generate -i ~/Desktop/octicons.ttf -o ~/Desktop/ --objc
 ![demo-objc](docs/demo_objc.jpg)
 
 ## TODO
-* Cache
 * Cocoa pod
 * more icon font testing
 

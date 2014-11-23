@@ -27,6 +27,7 @@ public class FPIconFont: NSObject {
     private let path: String
     private var glyphs = Dictionary<String, UInt>()
     private var cgRontRef: CGFontRef? = nil
+    private var cache = NSCache()
 
     /**
     Init method
@@ -37,6 +38,7 @@ public class FPIconFont: NSObject {
     */
     public init(path: String) {
         
+        self.cache.totalCostLimit = 50
         self.path = path
         
         let provider = CGDataProviderCreateWithFilename(path)
@@ -78,6 +80,15 @@ public class FPIconFont: NSObject {
             return nil
         }
         
+        var cacheObj:AnyObject? = self.cache.objectForKey(name)
+        if let cacheImage = cacheObj as? NSImage {
+            if cacheImage.size.width > CGFloat(size) {
+                var image = NSImage(data: cacheImage.TIFFRepresentation!)
+                image?.size = NSSize(width: size, height: size)
+                return image;
+            }
+        }
+        
         let font: NSFont = CTFontCreateWithGraphicsFont(self.cgRontRef, CGFloat(size) * 2.0, nil, nil) as NSFont
         
         var rect = font.boundingRectForGlyph(NSGlyph(glyph!))
@@ -106,6 +117,7 @@ public class FPIconFont: NSObject {
         NSGraphicsContext.restoreGraphicsState()
         let data = bitmap?.representationUsingType(NSBitmapImageFileType.NSPNGFileType, properties: Dictionary<NSObject, AnyObject>())
         let image = NSImage(data: data!)
+        self.cache.setObject(image!, forKey: name)
         image?.size = NSSize(width: size, height: size)
 
         return image

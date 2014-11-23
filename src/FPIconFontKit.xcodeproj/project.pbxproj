@@ -96,7 +96,7 @@
 		BB41E16319F58AE800ED0633 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "";
+			dstPath = Versions/A/Resources;
 			dstSubfolderSpec = 1;
 			files = (
 				BB41E16A19F58F0100ED0633 /* generate in CopyFiles */,
@@ -795,6 +795,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_DYLIB_INSTALL_NAME = "$(DYLIB_INSTALL_NAME_BASE:standardizepath)/$(EXECUTABLE_PATH)";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -815,6 +816,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_DYLIB_INSTALL_NAME = "$(DYLIB_INSTALL_NAME_BASE:standardizepath)/$(EXECUTABLE_PATH)";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -880,6 +882,7 @@
 				BB1619B819F6B58000AC466D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB1619E219F6B8A000AC466D /* Build configuration list for PBXNativeTarget "DemoObjc" */ = {
 			isa = XCConfigurationList;
@@ -888,6 +891,7 @@
 				BB1619E419F6B8A000AC466D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB41269519EF7D4E00FDC313 /* Build configuration list for PBXProject "FPIconFontKit" */ = {
 			isa = XCConfigurationList;
