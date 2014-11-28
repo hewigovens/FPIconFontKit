@@ -23,7 +23,7 @@ public class FPIconFont: NSObject {
         }
     }
     
-    ///  Private properties
+    ///  Private properties`
     private let path: String
     private var glyphs = Dictionary<String, UInt>()
     private var cgRontRef: CGFontRef? = nil
@@ -80,9 +80,10 @@ public class FPIconFont: NSObject {
             return nil
         }
         
-        var cacheObj:AnyObject? = self.cache.objectForKey(name)
+        let imageKey = NSString(format: "%@|%@", name, color.hexRepresentation!)
+        var cacheObj:AnyObject? = self.cache.objectForKey(imageKey)
         if let cacheImage = cacheObj as? NSImage {
-            if cacheImage.size.width > CGFloat(size) {
+            if cacheImage.size.width >= CGFloat(size) {
                 var image = NSImage(data: cacheImage.TIFFRepresentation!)
                 image?.size = NSSize(width: size, height: size)
                 return image;
@@ -117,9 +118,30 @@ public class FPIconFont: NSObject {
         NSGraphicsContext.restoreGraphicsState()
         let data = bitmap?.representationUsingType(NSBitmapImageFileType.NSPNGFileType, properties: Dictionary<NSObject, AnyObject>())
         let image = NSImage(data: data!)
-        self.cache.setObject(image!, forKey: name)
+        self.cache.setObject(image!, forKey: imageKey)
         image?.size = NSSize(width: size, height: size)
 
         return image
+    }
+}
+
+extension NSColor {
+    var hexRepresentation : NSString? {
+        get {
+            var redFloat : CGFloat = 0.0
+            var greenFloat : CGFloat = 0.0
+            var blueFloat : CGFloat = 0.0
+            var alphaFloat : CGFloat = 0.0
+            let color = self.colorUsingColorSpaceName(NSCalibratedRGBColorSpace)
+            if (color != nil) {
+                color?.getRed(&redFloat, green: &greenFloat, blue: &blueFloat, alpha: &alphaFloat)
+                let colorString = NSString(format: "#%@%@%@", NSString(format: "%02x", Int(redFloat * 255.99999)),
+                                                              NSString(format: "%02x", Int(greenFloat * 255.99999)),
+                                                              NSString(format: "%02x", Int(blueFloat * 255.99999)))
+                return colorString
+            } else {
+                return nil
+            }
+        }
     }
 }
